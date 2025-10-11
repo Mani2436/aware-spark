@@ -118,6 +118,8 @@ All colors MUST be HSL.
   
   .gradient-accent {
     background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    background-clip: text;
   }
   
   .shadow-elegant {
@@ -134,5 +136,12 @@ All colors MUST be HSL.
   
   .transition-smooth {
     transition: var(--transition-smooth);
+  }
+  
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, hsl(var(--primary) / 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--primary) / 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
   }
 }
